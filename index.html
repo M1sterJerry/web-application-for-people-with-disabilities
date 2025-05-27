@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Доступное веб-приложение</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать</h1>
+  </header>
+
+  <main>
+    <p>Это демонстрация веб-интерфейса, созданного с учётом потребностей людей с различными ограничениями.</p>
+
+    <div class="spaced-controls">
+      <button onclick="changeContrastMode()">Режимы контрастности</button>
+      <button onclick="increaseFontSize()">Увеличить шрифт</button>
+      <button onclick="decreaseFontSize()">Уменьшить шрифт</button>
+      <button onclick="resetFontSize()">Исходный шрифт</button>
+    </div>
+
+    <p><a href="#" class="accessible-link" onclick="showAccessibilityInfo(event)">Подробнее о доступности веб-приложений</a></p>
+
+    <div class="hidden" id="accessibility-info">
+      Доступность веб-приложений для людей с ограничениями по здоровью означает создание интерфейсов, которые удобны и понятны для всех пользователей, независимо от их физических или когнитивных особенностей. Это включает поддержку экранных дикторов, навигацию с клавиатуры, достаточный контраст текста, масштабируемость интерфейса, субтитры и простую структуру. Цель доступности — обеспечить равные условия использования цифровых продуктов для всех категорий граждан.
+    </div>
+
+    <div class="feedback" id="feedbackArea">
+      Вы можете использовать клавишу Tab для навигации.
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
